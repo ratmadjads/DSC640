@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+"""
+Name: Rio Atmadja
+Date: January 01, 2021
+Description: DSC Milestones (Text Mining on Islamic State Posts) DSC630 & DSC640
+"""
 import dash 
 import pandas as pd 
 import numpy as np 
@@ -25,7 +31,7 @@ from typing import Dict, List
 from pandas.core.frame import DataFrame 
 from pandas.core.series import Series 
 
-APP_PATH: str = '/var/www/html/apps'
+APP_PATH: str = '/var/www/applications/'
 csv_files: List[str]  = ['main_posts.csv' , 'embedded_messages.csv' ] 
 file_unions: set = set(csv_files) & set(os.listdir(APP_PATH))
 
